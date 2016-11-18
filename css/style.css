@@ -3,6 +3,8 @@ body{
   color: #ffffff;
   /*font-family: 'Cabin Sketch', cursive;*/
   font-family: 'Montserrat', sans-serif;
+  box-sizing: content-box;
+  font-size: 100%;
 }
 
 .containerX{
@@ -40,18 +42,18 @@ a {
 .menu-icon{
   width: 25px;
   vertical-align: middle;
-  transition:.7s;
+  transition:1.2s;
   margin-bottom: 2px;
 }
 .rotate{
-  transform: rotate(90deg);
-  transition: .7s;
+  transform: rotate(270deg);
+  transition: 1.2s;
 }
 
-.home{
-  /*transition: 0.9s;*/
+/*.home{
+  transition: 0.9s;
   height:40px;
-  /*border-bottom: solid 0.5px grey;*/
+  border-bottom: solid 0.5px grey;
 }
 .outer-home{
   min-height:40px;
@@ -60,7 +62,7 @@ a {
   top:0;
   left:0;
   width: 100vw;
-}
+}*/
 .opaque{
   opacity: 0;
   transition: 1s;
@@ -74,6 +76,7 @@ a {
 .nav-ul li{
   display:inline-block;
   margin-left: 10px;
+  font-size: 1.45em;
 }
 
 .hidden{
@@ -100,11 +103,15 @@ a {
   top: 0;
   left: 0;
   width:150px;
-
 }
 .social-media li{
   display: inline-block;
   margin-right: 5px;
+}
+
+.newsletter p{
+  color: #d4fd02;
+  font-size: 1.4em;
 }
 
 .navo a:hover, a:focus {
@@ -113,23 +120,144 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
-section{
-  height: 100vh;
-  padding: 50px;
+.leaf-pic{
+  float: right;
+  margin-right: 12%;
+  margin-top: 5%;
+  /*margin-bottom: -40px;*/
 }
+.contact form{
+  clear:both;
+  margin-left: 25%;
+}
+section{
+  min-height: 95vh;
+  padding: 2.5vh;
+  /*z-index:1;*/
+}
+
+/*section img{
+  z-index:2;
+}*/
 section:nth-child(odd) {
   background: linear-gradient(#005a70, #0390af);
 }
-
+section:nth-child(3){
+  background: linear-gradient(#d4fd02, #01bc40)
+}
 section:nth-child(even) {
-    background: linear-gradient(#d4fd02, #01bc40)
+  background: linear-gradient(#d4fd02, #01bc40)
+}
+#range{
+  padding: 0;
+  /*max-height: 100vh;*/
 }
 
-@media (max-width: 600px) {
+.main-image{
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.main-image img{
+  max-width: 100%;
+  transition:1.2s;
+}
+
+.title{
+  text-align: center;
+  margin-top: 8%;
+}
+
+.more-spiel{
+  margin-top: 15%;
+  float: right;
+  font-size: 1.3em;
+}
+
+
+.nothing{
+  margin: 0;
+  padding: 0;
+}
+.parallax{
+  background-image: url("../images/plantation.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-section{
+  background-image: url("../images/matcha2.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax div{
+  display: inline-block;
+  overflow: hidden;
+}
+.inner-parallax{
+  display: inline-block;
+  margin-left: 5%;
+}
+.carton{
+  width:100%;
+}
+.carton-container{
+  width: 35%;
+  overflow: auto;
+  margin-top:5%;
+  margin-left: 10%;
+}
+.pencil-pointer{
+  margin-left:-5%;
+  margin-bottom:25%;
+  width: 50%;
+  overflow: auto;
+}
+.pencil-pointer img{
+  transform: scaleX(-1);
+  width:50%;
+}
+
+.spiel{
+  max-width: 100%;
+  font-weight: bolder;
+  background-color: rgba(0,133,55, 0.6);
+  border-radius: 10px;
+  /*padding: 1%;*/
+  padding: 1% 3% 1% 3%;
+  font-weight: bolder;
+  max-width:100%;
+  margin: 1%;
+  margin-left: 25%;
+  margin-bottom:3%;
+  font-size: 3em;
+}
+.copyright{
+  position: absolute;
+  right:0;
+  bottom:0;
+}
+
+@media (max-width: 700px) {
 
   .social-media {
     display:none;
+  }
+
+  .main-image{
+    max-width:100%;
+  }
+  .leaf-pic, .cup{
+    display:none;
+  }
+  .contact form{
+    clear:both;
+    margin-left: auto;
   }
 
 }
