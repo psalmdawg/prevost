@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
   console.log( "ready!");
-  $(".trigger").addClass('hidden');
+  // $(".trigger").addClass('hidden');
   $(".home").removeClass("hide");
 
   $('.trigger').click(function(){
@@ -20,7 +20,7 @@ $( document ).ready(function() {
   $(document).scroll(function() {
     var scrollPosition = $(document).scrollTop()
     if(scrollPosition < 50){
-      $( ".hidden" ).fadeToggle( "slow", "linear" );
+      // $( ".hidden" ).fadeOut( "slow", "linear" );
 
       $('.outer-home').removeClass( "opaque" );
       $('.navo').removeClass("hide-right")
@@ -29,8 +29,8 @@ $( document ).ready(function() {
       $(".trigger").addClass('hidden');
       $(".home").removeClass("hide");
     } else {
-      $( ".hidden" ).fadeToggle( "slow", "linear" );
-
+      // $( ".hidden" ).fadeIn( "slow", "linear" );
+      $('.menu-icon').removeClass("rotate")
       $('.outer-home').addClass( "opaque" );
       $(".trigger").removeClass("hidden");
       $(".home").addClass("hide");

@@ -13,6 +13,7 @@ body{
 
 a {
   color: #ffffff;
+  text-decoration: none;
 }
 .trigger{
   cursor: pointer;
@@ -23,7 +24,7 @@ a {
   padding:10px;
 }
 .hide-right{
-  margin-right: -500px;
+  margin-right: -475px;
   transition:1s;
 }
 .hide-left{
@@ -38,8 +39,9 @@ a {
 }
 .menu-icon{
   width: 25px;
-  vertical-align: bottom;
+  vertical-align: middle;
   transition:.7s;
+  margin-bottom: 2px;
 }
 .rotate{
   transform: rotate(90deg);
@@ -47,9 +49,9 @@ a {
 }
 
 .home{
-  transition: 0.9s;
+  /*transition: 0.9s;*/
   height:40px;
-  border-bottom: solid 0.5px grey;
+  /*border-bottom: solid 0.5px grey;*/
 }
 .outer-home{
   min-height:40px;
@@ -75,8 +77,9 @@ a {
 }
 
 .hidden{
-  display:none;
-  /*transition:1s;*/
+  /*visibility: hidden;*/
+  transition:.5s;
+  opacity: 0;
 }
 .navo{
   right: 0;
@@ -124,13 +127,9 @@ section:nth-child(even) {
 }
 
 @media (max-width: 600px) {
-  /*.container{
-    background: red;
-  }*/
+
   .social-media {
     display:none;
   }
-  .navo ul{
-    /*display:grid;*/
-  }
+
 }
