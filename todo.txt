@@ -1,0 +1,8 @@
+jquery the nav bar for cross browser performance
+https://css-tricks.com/jquery-magicline-navigation/
+
+image sizing and responsive adjusting; cross browser issue.
+https://www.sitepoint.com/css3-responsive-centered-image/
+
+carousel for main images. jquery.
+http://kenwheeler.github.io/slick/
